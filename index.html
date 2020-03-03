@@ -15,13 +15,16 @@
   <a-scene embedded="" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
     <a-assets>
         <a-asset-item id="virus" src="assets/objects/Virus.gltf"></a-asset-item>
-        <a-asset-item id="virus2" src="assets/objects/Virus2.gltf"></a-asset-item>
-      </a-assets>
+    </a-assets>
       <a-marker type="pattern" url="assets/images/QR.patt">
         <a-gltf-model src="#virus" scale="0.5 0.5 0.5"></a-gltf-model>
       </a-marker>
+
+    <a-assets>
+        <a-asset-item id="virus2" src="assets/objects/Virus2.gltf"></a-asset-item>
+    </a-assets>
       <a-marker type="pattern" url="assets/images/pattern-QRcode.patt">
-        <a-gltf-model src="#virus" scale="0.5 0.5 0.5"></a-gltf-model>
+        <a-gltf-model src="#virus2" scale="0.5 0.5 0.5"></a-gltf-model>
       </a-marker>
     <a-entity camera=""></a-entity>
   </a-scene>
