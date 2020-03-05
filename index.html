@@ -22,6 +22,8 @@
     </a-assets>
       <a-marker type="pattern" url="assets/images/pattern-QRcode.patt">
         <a-gltf-model src="#virus1" scale="1.5 1.5 1.5"></a-gltf-model>
+        <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 2000; color: #E80C3B; size: 2" scale = "0.05"></a-entity>
+        <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 3000; color: #50E813; size: 2" scale = "0.1"></a-entity>
       </a-marker>
 
       <a-assets>
@@ -29,12 +31,11 @@
       </a-assets>
         <a-marker type="pattern" url="assets/images/QR.patt">
           <a-gltf-model src="#virus2" scale="1.5 1.5 1.5"></a-gltf-model>
+          <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 2000; color: #E80C3B; size: 2" scale = "0.05"></a-entity>
+          <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 3000; color: #50E813; size: 2" scale = "0.1"></a-entity>
         </a-marker>
 
     <a-entity camera look-controls touchEnabled = "true"></a-entity>
-
-    <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 2000; color: #E80C3B; size: 2" scale = "0.05"></a-entity>
-    <a-entity position="0 2 -15" particle-system="preset: dust; particleCount: 3000; color: #50E813; size: 2" scale = "0.1"></a-entity>
   </a-scene>
 </body>
 </html>
